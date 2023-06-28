@@ -19,12 +19,26 @@ The code is located under TFM folder, and it contains:
 
 - **nga_west2_db** folder with the data extracted from NGA West 2 database for the selected earthquakes.
 - **plots** folder with the plots generated.
-- **.txt** files with the data recordings for the opensees analysis performed.
+- **split_files** folder with splitted files with the data recordings for the opensees analysis performed. The files are splittd as Github only allows uploads up to 100MB for each file.
 - 3 jupyter notebooks:
-  - **opensees_analysis.ipynb** contains code that performs the analysis over the building with opensees and it exports the recorded data to .txt files
-  - **opensees_plots.ipynb** contains the code to read the data in the .txt files and generate plots.
+  - **opensees_analysis.ipynb** contains code that performs the analysis over the building with opensees and it exports the recorded data to .txt files.  
+  :warning: This notebook takes long to execute, it already took 2 days and 18h only for the time history analysis.
+  - **opensees_plots.ipynb** contains the code to read the data in the .txt files and generate plots. Before using it, read how to prepare the .txt files in the following section.
   - **opensees_extra_plots.ipynb** contains extra plots.
 
+## Join splitted .txt files with the analysis data
+
+It can be done using, for example, the Git bash terminal.
+
+The files were splitted in the following manner:
+```
+split -b 50M ./TFM/earthquakes_data.txt ./TFM/split_files/earthquakes_data.txt.
+```
+
+To work again with this repository, for each of the splitted files group you should execute the following:
+```
+cat ./TFM.split_files/earthquakes_data.txt.* > ./TFM/earthquakes_data.txt
+```
 # Working with git
 
 ## Create and clone a repo
