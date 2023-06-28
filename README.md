@@ -2,11 +2,15 @@
 
 This repository cotains the OpenSees Code for my Master's Thesis: Ground motion directionality for the design and assesment of structures.
 
-The project has been developed in the Department of Civil and Environmental Engineering at University of California Irvine under the superivion of Prof. Farzin Zareian, and it is evaluated at Universtiat Polit[e]cnica de Catalunya (UPC) as the master thesis.
+The project has been developed in the Department of Civil and Environmental Engineering at University of California Irvine under the superivion of Prof. Farzin Zareian, and it is evaluated at Universtiat Politècnica de Catalunya (UPC) as the master thesis.
 
 <p align="center">
   <img src="./img/baixa.png" width="200" alt="UCI">
   <img src="./img/BCeater-right-768x416.png" width="350" title="Peter the Anteater">
+</p>
+
+<p align="center">
+  <img src="./img/Etseib_logo" width="200" alt="UCI">
 </p>
 
 ## Structure of the repo
