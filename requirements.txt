@@ -1,0 +1,8 @@
+pandas==1.5.3
+openpyxl==3.1.2
+matplotlib==3.7.1
+openseespy==3.4.0.5
+opsvis==1.0.26
+notebook==6.5.3
+tqdm==4.65.0
+ipyparallel==8.6.1

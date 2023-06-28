@@ -1,0 +1,86 @@
+# Ground motion directionality for the design and assesment of structures
+
+This repository cotains the OpenSees Code for my Master's Thesis: Ground motion directionality for the design and assesment of structures.
+
+The project has been developed in the Department of Civil and Environmental Engineering at University of California Irvine under the superivion of Prof. Farzin Zareian, and it is evaluated at Universtiat Polit[e]cnica de Catalunya (UPC) as the master thesis.
+
+<p align="center">
+  <img src="./img/baixa.png" width="200" alt="UCI">
+  <img src="./img/BCeater-right-768x416.png" width="350" title="Peter the Anteater">
+</p>
+
+## Structure of the repo
+
+The code is located under TFM folder, and it contains:
+
+- **nga_west2_db** folder with the data extracted from NGA West 2 database for the selected earthquakes.
+- **plots** folder with the plots generated.
+- **.txt** files with the data recordings for the opensees analysis performed.
+- 3 jupyter notebooks:
+  - **opensees_analysis.ipynb** contains code that performs the analysis over the building with opensees and it exports the recorded data to .txt files
+  - **opensees_plots.ipynb** contains the code to read the data in the .txt files and generate plots.
+  - **opensees_extra_plots.ipynb** contains extra plots.
+
+# Working with git
+
+## Create and clone a repo
+
+- Create a repo on the github website inside jorvend user
+
+- git clone https://github.com/jorvend/master-thesis.git (on the green button "code")
+
+## Pull changes from github repo
+
+- git pull
+
+## Make changes from the github repo
+
+- git status (to see what is changed)
+
+- write in the gitignore file the files I don't want to push
+
+- git add . (to add everything)
+
+- git status (to see again if the changes are added)
+
+- git commit -m "Update gitignore"
+
+- git push (to push it to the github cloud)
+
+# Working with this repo
+
+## 1. Python virtual environment setup
+
+Create a virtual environment with python version 3.9 (the maximum supported by OpenSeesPy latest version 3.4.0.2). From the working directory execute:
+
+`py -3.9 -m venv tfm_env` (ONLY FIRST TIME)
+
+Each time, previous to start working, execute:
+
+`./tfm_env/Scripts/activate` (ALWAYS)
+
+You'll see something like (in Windows):
+
+`(tfm_env) PS C:\_\UCI\master-thesis> ` (ALWAYS)
+
+## 2. Install OpenSeesPy and other dependencies
+
+You can install all the dependencies from the requirements.txt file
+
+`(tfm_env) PS C:\_\UCI\master-thesis> python -m pip install -r requirements.txt` (EACH TIME I ADD NEW LIBRARIES)
+
+## 3. Start a Jupyter Notebook
+
+### Option: From installed jupyter kernel
+
+- From the activated python env install (ONLY FIRST TIME)
+
+  `(tfm_env) PS C:\_\UCI\master-thesis> python -m pip install notebook`
+
+  `ipython kernel install --user --name=tfm_env`
+
+- Run:
+
+  `jupyter notebook`
+
+- Connect to a Jupyter Kernel with your venv.
