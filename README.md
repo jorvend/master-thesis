@@ -10,7 +10,7 @@ The project has been developed in the Department of Civil and Environmental Engi
 </p>
 
 <p align="center">
-  <img src="./img/Etseib_logo.png" width="200" alt="UCI">
+  <img src="./img/Etseib_logo.png" width="450" alt="UCI">
 </p>
 
 ## Structure of the repo
